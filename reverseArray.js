@@ -6,7 +6,19 @@ console.log(reverseArray(["A", "B", "C"]));
 ```
 */
 
-const reverseArray = ["C", "B", "A"];
+const reverseArray = ["A", "B", "C"];
 reverseArray.reverse();
 
 console.log(reverseArray);
+
+/*method 2 */
+function reverseArray1( array ) {
+    var reversedArray = [];
+  
+    while( i = array.pop() )
+        reversedArray.push( i );
+    
+    return reversedArray;
+  }
+
+  console.log(reverseArray1(["A", "B", "C"]));
